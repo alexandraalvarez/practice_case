@@ -1,0 +1,55 @@
+body{
+	font-family: monospace;
+}
+
+nav{/*para que el computador reconozca que es un menú y no una lista se usa nav*/
+	width: 120px;
+}
+ul{
+	/*outline: 2px solid #6A0888;para dibujar un marco, que no es lo mismo que un borde, que rodee a toda la lista*/
+	list-style: none;/*para quitar las viñetas de la lista*/
+	margin: 0;
+	padding: 0;
+	line-height: 28px;/*para modificar el alto de un objeto inline*/
+}
+
+li{
+	/*outline: 2px solid #6A0888; para ponerle líneas entre los elementos de la lista*/
+}
+
+ul li:first-child{
+	background-color: #9A2EFE;
+}
+
+a{
+	display: block;/*para pasar objeto de inline a block, así ocupa todo el espacio y se puede modificar como bloque*/
+	text-decoration: none;/*para sacar las líneas de los vínculos html*/
+	padding-left: 10px;
+	color: #6A0888;
+	font-weight: bold;/*para texto en negrita*/
+}
+
+a:hover{/*para darle un efecto de color diferente al pasar el mouse sobre él. También sirve para hacer menu en cascada*/
+	background-color: #ECCEF5;
+}
+
+a:active{/*para cuando se pincha el link, o sea, cuando se vuelve activo*/
+	background-color: #6A0888;
+	color: #FFFF00;
+}
+
+ul li:first-child a{/*para ponerle un color diferente a las letras del inicio*/
+	color:#FFFF00;
+}
+
+ul li:first-child a:hover{/*para ponerle un color diferente a las letras del inicio bajo el efecto hover*/
+	color:#6A0888;
+}
+
+ul li:first-child a{/*para ponerle un color diferente a las letras del inicio*/
+	color:#FFFF00;
+}
+
+ul li:first-child a:active{/*para ponerle un color diferente a las letras del inicio cuando está activo*/
+	color:#FFFF00;
+}

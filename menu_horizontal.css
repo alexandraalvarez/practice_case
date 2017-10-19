@@ -1,0 +1,76 @@
+body{
+	font-family: monospace;
+}
+
+nav{/*para que el computador reconozca que es un menú y no una lista se usa nav*/
+
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #8000FF;
+	line-height: 30px;
+}
+
+li{
+	width: 100px;
+	display: inline-block;  
+	text-align: center;	
+}
+
+
+a{
+	text-decoration: none;/*para sacar las líneas de los vínculos html*/
+	padding-left: 0px;
+	color: #FFFF00; /*#6A0888 */
+	font-weight: bold;/*para texto en negrita*/
+	display: block;/*para que la etiqueta ancord(a) ocupe todo el espacio del ancho de la cajita*/
+	font-size: 15px;
+}
+
+a:hover{/*para darle un efecto de color diferente al pasar el mouse sobre él. También sirve para hacer menu en cascada*/
+	background-color: #F3F781;
+	color: #8000FF;
+}
+
+/*a:active{/*para cuando se pincha el link, o sea, cuando se vuelve activo*/
+	/*background-color: #6A0888;
+	color: #FFFF00;
+}
+
+/*Opción B para hacer el menú, usando float */
+
+nav{/*para que el computador reconozca que es un menú y no una lista se usa nav*/
+
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #8000FF;
+	line-height: 30px;
+	overflow: auto;/*en éste caso el contenedor de li es ul, por eso acá está el overflow:auto, para que siga siendo bloque*/
+}
+
+li{
+	width: 100px;  
+	text-align: center;
+	float: left;/*cuando uso float la etiqueta (bloque) contenedor, debe tener la propiedad overflow:auto, para que no se desconfigure*/	
+}
+
+a{
+	text-decoration: none;/*para sacar las líneas de los vínculos html*/
+	padding-left: 0px;
+	color: #FFFF00; /*#6A0888 */
+	font-weight: bold;/*para texto en negrita*/
+	display: block;/*para que la etiqueta ancord(a) ocupe todo el espacio del ancho de la cajita*/
+	font-size: 15px;
+}
+
+a:hover{/*para darle un efecto de color diferente al pasar el mouse sobre él. También sirve para hacer menu en cascada*/
+	background-color: #F3F781;
+	color: #8000FF;
+}
